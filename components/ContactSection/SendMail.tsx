@@ -20,11 +20,15 @@ const SendMail = () => {
     const handleSubmit = (e: React.FormEvent) => {
         e.preventDefault();
 
+        console.log("ola")
+
         const { name, email, phone, subject, message } = formData;
     
         const mailtoLink = `mailto:instituto.serfeliz@yahoo.com.br?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(
             `Nome: ${name}\nE-mail: ${email}\nTelefone: ${phone}\n\nMensagem:\n${message}`
         )}`;
+
+        console.log(mailtoLink)
 
         window.location.href = mailtoLink;
     };

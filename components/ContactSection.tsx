@@ -2,6 +2,7 @@
 
 import { Mail, Phone, MapPin, Send } from 'lucide-react';
 import { FaWhatsapp } from 'react-icons/fa';
+import SendMail from './ContactSection/SendMail';
 
 const ContactSection = () => {
   return (
@@ -16,74 +17,7 @@ const ContactSection = () => {
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-          <div className="bg-white p-8 rounded-lg shadow-md">
-            <form>
-              <h3 className="text-2xl font-bold text-gray-900 mb-6">Envie-nos uma Mensagem</h3>
-              
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-                <div>
-                  <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">Nome Completo *</label>
-                  <input 
-                    type="text" 
-                    id="name" 
-                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors" 
-                    placeholder="Seu nome"
-                    required
-                  />
-                </div>
-                <div>
-                  <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">E-mail *</label>
-                  <input 
-                    type="email" 
-                    id="email" 
-                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors" 
-                    placeholder="Seu e-mail"
-                    required
-                  />
-                </div>
-              </div>
-              
-              <div className="mb-6">
-                <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-1">Número de Telefone</label>
-                <input 
-                  type="tel" 
-                  id="phone" 
-                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors" 
-                  placeholder="Seu número de telefone"
-                />
-              </div>
-              
-              <div className="mb-6">
-                <label htmlFor="subject" className="block text-sm font-medium text-gray-700 mb-1">Assunto *</label>
-                <input 
-                  type="text" 
-                  id="subject" 
-                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors" 
-                  placeholder="Assunto da mensagem"
-                  required
-                />
-              </div>
-              
-              <div className="mb-6">
-                <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1">Mensagem *</label>
-                <textarea 
-                  id="message" 
-                  rows={5} 
-                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors" 
-                  placeholder="Sua mensagem"
-                  required
-                ></textarea>
-              </div>
-              
-              <button 
-                type="submit" 
-                className="w-full px-6 py-3 bg-red-500 text-white font-medium rounded-lg shadow-md hover:bg-red-600 transition-colors duration-300 flex items-center justify-center"
-              >
-                Enviar Mensagem
-                <Send size={18} className="ml-2" />
-              </button>
-            </form>
-          </div>
+          <SendMail />
           
           <div>
             <div className="bg-blue-500 text-white p-8 rounded-lg shadow-md mb-8">

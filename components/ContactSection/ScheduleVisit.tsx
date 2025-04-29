@@ -1,8 +1,8 @@
 "use client";
 
 const ScheduleVisit = () => {
-    const whatsappNumber = "5531995852001"; // Número do WhatsApp com código do país (55 para Brasil)
-    const message = "Olá, gostaria de agendar uma visita à escola."; // Mensagem predefinida
+    const whatsappNumber = "5531995852001";
+    const message = "Olá, gostaria de agendar uma visita à escola.";
 
     return (
         <div className="bg-white p-8 rounded-lg shadow-md">

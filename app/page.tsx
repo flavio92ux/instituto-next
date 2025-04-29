@@ -5,6 +5,8 @@ import Footer from "@/components/Footer";
 import FeaturesSection from "@/components/FeaturesSection";
 import MissionSection from "@/components/MissionSection";
 import ServicesSection from "@/components/ServicesSection";
+import TestimonialsSection from "@/components/TestimonialsSection";
+import GallerySection from "@/components/GallerySection";
 
 export default function Home() {
   return (
@@ -13,8 +15,10 @@ export default function Home() {
       <main className="min-h-screen">
         <HeroSection />
         <ServicesSection />
-        <MissionSection />
-        <FeaturesSection />
+        <GallerySection />
+        {/* <MissionSection /> */}
+        {/* <FeaturesSection /> */}
+        <TestimonialsSection />
         <ContactSection />
       </main>
       <Footer />

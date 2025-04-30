@@ -57,6 +57,11 @@ export default function RootLayout({
           content="HM8EQ7aetV45DAINpGsAl9P4qjmv-Moue1rwS8a0BCM"
         />
 
+        <meta
+          name="google-adsense-account"
+          content="ca-pub-4946920103183663"
+        />
+
         {/* Google Ads */}
         <Script
           async

@@ -1,6 +1,7 @@
 import './globals.css';
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
+import Script from 'next/script';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -49,12 +50,27 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pt-BR">
+      {/* Meta tag de verificação do Google */}
       <head>
         <meta
           name="google-site-verification"
           content="HM8EQ7aetV45DAINpGsAl9P4qjmv-Moue1rwS8a0BCM"
         />
       </head>
+
+      {/* Google Tag Manager */}
+      <Script
+        async
+        src="https://www.googletagmanager.com/gtag/js?id=G-2EKLCJJ6FC"
+      ></Script>
+      <Script id="google-analytics">
+        {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-2EKLCJJ6FC');
+          `}
+      </Script>
       <body className={inter.className}>{children}</body>
     </html>
   );

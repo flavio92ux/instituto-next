@@ -1,7 +1,7 @@
 import './globals.css';
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
-import Script from 'next/script'; // Importando o componente Script do Next.js
+import Script from 'next/script';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -57,20 +57,27 @@ export default function RootLayout({
           content="HM8EQ7aetV45DAINpGsAl9P4qjmv-Moue1rwS8a0BCM"
         />
 
-        {/* Google Tag Manager */}
+        {/* Google Ads */}
         <Script
           async
-          src="https://www.googletagmanager.com/gtag/js?id=G-2EKLCJJ6FC"
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4946920103183663"
+          crossOrigin="anonymous"
         ></Script>
-        <Script id="google-analytics">
-          {`
+      </head>
+
+      {/* Google Tag Manager */}
+      <Script
+        async
+        src="https://www.googletagmanager.com/gtag/js?id=G-2EKLCJJ6FC"
+      ></Script>
+      <Script id="google-analytics">
+        {`
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
             gtag('config', 'G-2EKLCJJ6FC');
           `}
-        </Script>
-      </head>
+      </Script>
       <body className={inter.className}>{children}</body>
     </html>
   );

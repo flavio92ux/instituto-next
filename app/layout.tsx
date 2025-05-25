@@ -62,12 +62,36 @@ export default function RootLayout({
           content="ca-pub-4946920103183663"
         />
 
-        {/* Google Ads */}
-        <Script
-          async
-          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4946920103183663"
-          crossOrigin="anonymous"
-        ></Script>
+        {/* Dado Estruturado - Preschool */}
+        <Script id="structured-data" type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Preschool",
+            "name": "Instituto Ser Feliz",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Rua Cel. Américo Teixeira Guimarães, 401 - Industrial",
+              "addressLocality": "Contagem",
+              "addressRegion": "MG",
+              "postalCode": "32235-130",
+              "addressCountry": "BR"
+            },
+            "geo": {
+              "@type": "GeoCoordinates",
+              "latitude": -19.931,
+              "longitude": -44.053
+            },
+            "url": "https://instituto-next.vercel.app/",
+            "telephone": "+55 31 99585-2001",
+            "openingHours": [
+              "Mo-Fr 07:00-18:00"
+            ],
+            "foundingDate": "1980",
+            "sameAs": [
+              "https://www.instagram.com/instituto_serfeliz"
+            ]
+          })}
+        </Script>
       </head>
 
       {/* Google Tag Manager */}

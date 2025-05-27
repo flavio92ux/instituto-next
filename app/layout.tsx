@@ -13,11 +13,12 @@ export const metadata: Metadata = {
     'escola',
     'creche',
     'instituto',
+    'ser',
+    'feliz',
     'maternal',
     'comunidade',
     'industrial',
     'contagem',
-    'maternal',
   ],
   authors: [{ name: 'Instituto Ser Feliz' }],
   openGraph: {

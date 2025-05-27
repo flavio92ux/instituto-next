@@ -46,7 +46,7 @@ const HeroSection = () => {
               <div className="absolute -bottom-4 -right-4 w-full h-full bg-blue-500 rounded-3xl transform -rotate-3"></div>
               <div className="relative z-10 overflow-hidden rounded-3xl shadow-xl">
                 <img 
-                  src="https://images.pexels.com/photos/8535214/pexels-photo-8535214.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" 
+                  src="/instituto-capa.jpeg" 
                   alt="Crianças brincando e aprendendo" 
                   className="w-full h-auto object-cover transform transition-transform duration-700 hover:scale-105"
                 />

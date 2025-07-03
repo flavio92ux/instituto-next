@@ -4,6 +4,7 @@ import SendMail from './ContactSection/SendMail';
 import ScheduleVisit from './ContactSection/ScheduleVisit';
 import ContactInfo from './ContactSection/ContactInfo';
 import ContactHeader from './ContactSection/ContactHeader';
+import GoogleMap from './ContactSection/GoogleMap';
 
 const ContactSection = () => {
   return (
@@ -12,7 +13,8 @@ const ContactSection = () => {
         <ContactHeader />
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-          <SendMail />
+          {/* <SendMail /> */}
+          <GoogleMap />
           <div>
             <ContactInfo />
             <ScheduleVisit />

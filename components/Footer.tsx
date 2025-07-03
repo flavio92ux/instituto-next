@@ -87,9 +87,9 @@ const Footer = () => {
               &copy; {new Date().getFullYear()} Instituto Ser Feliz. Todos os direitos reservados.
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="text-gray-500 hover:text-white text-sm transition-colors">Política de Privacidade</a>
-              <a href="#" className="text-gray-500 hover:text-white text-sm transition-colors">Termos de Serviço</a>
-              <a href="#" className="text-gray-500 hover:text-white text-sm transition-colors">Política de Cookies</a>
+              <a href="/politica-de-privacidade" className="text-gray-500 hover:text-white text-sm transition-colors">Política de Privacidade</a>
+              <a href="/termos-de-servico" className="text-gray-500 hover:text-white text-sm transition-colors">Termos de Serviço</a>
+              <a href="/politica-de-cookies" className="text-gray-500 hover:text-white text-sm transition-colors">Política de Cookies</a>
             </div>
           </div>
         </div>

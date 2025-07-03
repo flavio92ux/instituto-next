@@ -25,21 +25,6 @@ const HeroSection = () => {
             <p className="text-lg md:text-xl text-gray-700 mb-8 max-w-lg">
               O Instituto Ser Feliz é uma instituição filantrópica localizada no bairro Industrial, em Contagem, Minas Gerais. Fundado em 7 de julho de 1980 por um grupo de mães com o objetivo de oferecer apoio às famílias carentes da região.
             </p>
-            <div className="flex flex-wrap gap-4">
-              <a 
-                href="#contact" 
-                className="inline-flex items-center px-6 py-3 text-white bg-blue-500 rounded-full shadow-lg hover:bg-blue-600 transition-colors duration-300"
-              >
-                Inscreva-se
-                <ArrowRight size={20} className="ml-2" />
-              </a>
-              <a 
-                href="#programs" 
-                className="inline-flex items-center px-6 py-3 text-blue-500 border-2 border-blue-500 rounded-full hover:bg-blue-50 transition-colors duration-300"
-              >
-                Explorar
-              </a>
-            </div>
           </div>
           <div className="w-full lg:w-1/2">
             <div className="relative">

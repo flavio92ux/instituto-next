@@ -70,10 +70,11 @@ const Header = () => {
           <div className="container mx-auto px-4 py-4">
             <nav className="flex flex-col space-y-4">
               <Link href="#home" onClick={() => setIsMenuOpen(false)}>Início</Link>
-              <Link href="#about" onClick={() => setIsMenuOpen(false)}>Sobre nós</Link>
+              {/* <Link href="#about" onClick={() => setIsMenuOpen(false)}>Sobre nós</Link> */}
               <Link href="#programs" onClick={() => setIsMenuOpen(false)}>Programas</Link>
-              <Link href="#gallery" onClick={() => setIsMenuOpen(false)}>Galeria</Link>
-              <Link href="#testimonials" onClick={() => setIsMenuOpen(false)}>Depoimentos</Link>
+              <Link href="#faq" onClick={() => setIsMenuOpen(false)}>FAQ</Link>
+              {/* <Link href="#gallery" onClick={() => setIsMenuOpen(false)}>Galeria</Link> */}
+              {/* <Link href="#testimonials" onClick={() => setIsMenuOpen(false)}>Depoimentos</Link> */}
               <Link href="#contact" onClick={() => setIsMenuOpen(false)}>Contato</Link>
               <a 
                 href="tel:+1234567890" 

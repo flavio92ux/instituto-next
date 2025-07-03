@@ -17,10 +17,11 @@ const HeroSection = () => {
       <div className="container mx-auto px-4 md:px-6 relative z-10">
         <div className="flex flex-col lg:flex-row items-center">
           <div className="w-full lg:w-1/2 mb-10 lg:mb-0">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight mb-4">
-              <span className="text-blue-500">Nutrir</span> Mentes Jovens,
-              <span className="text-red-500"> Construir </span> Futuros Brilhantes
-            </h1>
+            <h1 className="sr-only">Creche e Escola Infantil no Bairro Industrial - Instituto Ser Feliz</h1>
+            <div className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight mb-4">
+              <span className="text-blue-500">Cuidar</span> Com Amor,
+              <span className="text-red-500"> Ensinar </span> com Propósito
+            </div>
             <p className="text-lg md:text-xl text-gray-700 mb-8 max-w-lg">
               O Instituto Ser Feliz é uma instituição filantrópica localizada no bairro Industrial, em Contagem, Minas Gerais. Fundado em 7 de julho de 1980 por um grupo de mães com o objetivo de oferecer apoio às famílias carentes da região.
             </p>

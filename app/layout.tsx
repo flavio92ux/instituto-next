@@ -6,9 +6,9 @@ import Script from 'next/script';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'Instituto Ser Feliz | Creche Escolar',
+  title: 'Instituto Ser Feliz | Creche e Escola Infantil no Bairro Industrial - Contagem MG',
   description:
-    'Oferece educação infantil em tempo integral para crianças de 1 a 3 anos e 11 meses, atendendo cerca de 150 crianças e suas famílias',
+    'Creche e escola infantil gratuita no bairro Industrial em Contagem MG. Educação integral para crianças de 1 a 3 anos. Desde 1980 cuidando da comunidade.',
   keywords: [
     'escola',
     'creche',

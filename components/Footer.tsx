@@ -19,13 +19,13 @@ const Footer = () => {
               Oferecendo educação de qualidade e cuidados para crianças de 1 a 3 anos. Nossa missão é criar um ambiente acolhedor onde as crianças possam aprender, crescer e prosperar.
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="text-gray-400 hover:text-white transition-colors">
+              <a href="https://www.facebook.com/profile.php?id=301587243324992&_rdr" className="text-gray-400 hover:text-white transition-colors">
                 <Facebook size={20} />
               </a>
-              <a href="#" className="text-gray-400 hover:text-white transition-colors">
+              <a href="https://www.instagram.com/instituto_serfeliz" className="text-gray-400 hover:text-white transition-colors">
                 <Instagram size={20} />
               </a>
-              <a href="#" className="text-gray-400 hover:text-white transition-colors">
+              <a href="https://wa.me/5531995852001" className="text-gray-400 hover:text-white transition-colors">
                 <FaWhatsapp size={20} />
               </a>
             </div>

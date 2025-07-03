@@ -35,10 +35,11 @@ const Header = () => {
           {/* Navegação Desktop */}
           <nav className="hidden md:flex items-center space-x-8">
             <Link href="#home">Início</Link>
-            <Link href="#about">Sobre nós</Link>
+            {/* <Link href="#about">Sobre nós</Link> */}
             <Link href="#programs">Programas</Link>
-            <Link href="#gallery">Galeria</Link>
-            <Link href="#testimonials">Depoimentos</Link>
+            <Link href="#faq">FAQ</Link>
+            {/* <Link href="#gallery">Galeria</Link> */}
+            {/* <Link href="#testimonials">Depoimentos</Link> */}
             <Link href="#contact">Contato</Link>
           </nav>
 

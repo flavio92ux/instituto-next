@@ -8,7 +8,7 @@ import GoogleMap from './ContactSection/GoogleMap';
 
 const ContactSection = () => {
   return (
-    <section id="contact" className="py-16 md:py-24 bg-gray-50">
+    <section id="contact" className="bg-gray-50">
       <div className="container mx-auto px-4 md:px-6">
         <div className='hidden lg:block'>
           <ContactHeader />

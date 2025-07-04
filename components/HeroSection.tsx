@@ -12,7 +12,7 @@ const HeroSection = () => {
         <div className="absolute bottom-20 left-1/3 w-16 h-16 rounded-full bg-yellow-400 opacity-20 animate-float-slow"></div>
       </div>
 
-      <div className="container mx-auto px-4 md:px-6 relative z-10">
+      <div className="container mx-auto px-4 md:px-6 relative z-10 mt-1">
         <div className="relative max-w-6xl mx-auto">
           {/* Imagem de Destaque */}
           <div className="relative group">

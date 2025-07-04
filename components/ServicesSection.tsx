@@ -28,7 +28,7 @@ const ServicesSection = () => {
     <section id="programs" className="mb-10">
     <div className="container mx-auto px-4 md:px-6">
       <div className="flex flex-col items-center text-center mb-16">
-        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Creche e Escola Infantil Instituto</h2>
+        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Creche e Escola Infantil Instituto Ser Feliz</h2>
         <div className="w-20 h-1 bg-blue-500 mb-6"></div>
         <p className="max-w-3xl text-lg text-gray-700">
           Oferecemos uma variedade de programas projetados para atender às necessidades de desenvolvimento das crianças em diferentes idades, promovendo o crescimento cognitivo, social, emocional e físico.

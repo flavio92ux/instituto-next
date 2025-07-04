@@ -2,7 +2,7 @@
 
 const HeroSection = () => {
   return (
-    <section id="home" className="relative pt-20 pb-16 md:pt-32 md:pb-24 overflow-hidden">
+    <section id="home" className="relative pt-20 pb-16 md:pt-32 md:pb-24 overflow-hidden mb-8">
       {/* Elementos de Fundo Decorativos */}
       <div className="absolute top-0 right-0 -mr-40 -mt-40 w-96 h-96 rounded-full bg-blue-100 opacity-30"></div>
       <div className="absolute bottom-0 left-0 -ml-40 -mb-40 w-96 h-96 rounded-full bg-red-100 opacity-30"></div>

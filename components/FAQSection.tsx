@@ -3,7 +3,7 @@ import React from 'react';
 const faqs = [
   {
     question: "O Instituto Ser Feliz é uma creche pública?",
-    answer: "Somos uma instituição filantrópica que oferece educação infantil gratuita para crianças de 1 a 3 anos no bairro Industrial, em Contagem."
+    answer: "Somos uma instituição conveniada com a prefeitura de Contagem que oferece educação infantil gratuita para crianças de 1 a 3 anos no bairro Industrial, em Contagem."
   },
   {
     question: "Onde fica localizada a creche?",

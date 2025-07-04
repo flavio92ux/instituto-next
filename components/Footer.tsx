@@ -82,7 +82,7 @@ const Footer = () => {
         <div className="border-t border-gray-800 mt-12 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-500 text-sm mb-4 md:mb-0">
-              &copy; {new Date().getFullYear()} Instituto Ser Feliz. Todos os direitos reservados.
+              &copy; {new Date().getFullYear()} <a href="https://github.com/flavio92ux" target="_blank" rel="noopener noreferrer" className="underline hover:text-white">flavio92ux</a>. Todos os direitos reservados.
             </p>
             <div className="flex space-x-4">
               <a href="/politica-de-privacidade" className="text-gray-500 hover:text-white text-sm transition-colors">Política de Privacidade</a>

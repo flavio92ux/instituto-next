@@ -14,7 +14,7 @@ const ContactSection = () => {
           <ContactHeader />
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:pb-8">
           {/* <SendMail /> */}
           <GoogleMap />
           <div>

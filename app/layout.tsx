@@ -108,6 +108,9 @@ export default function RootLayout({
             gtag('config', 'G-2EKLCJJ6FC');
           `}
       </Script>
+
+      <Script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4946920103183663"
+        crossorigin="anonymous"></Script>
       <body className={inter.className}>{children}</body>
     </html>
   );

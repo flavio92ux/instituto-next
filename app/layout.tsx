@@ -25,11 +25,11 @@ export const metadata: Metadata = {
     title: 'Instituto Ser Feliz | Educação Infantil',
     description:
       'Oferece educação infantil em tempo integral para crianças de 1 a 3 anos e 11 meses, atendendo cerca de 150 crianças e suas famílias',
-    url: 'https://instituto-next.vercel.app/',
+    url: 'https://instituto-serfeliz-industrial.online/',
     siteName: 'Instituto Ser Feliz',
     images: [
       {
-        url: 'https://instituto-next.vercel.app/instituto.jpeg',
+        url: 'https://instituto-serfeliz-industrial.online/instituto.jpeg',
         width: 1200,
         height: 630,
         alt: 'Instituto Ser Feliz',
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
   icons: {
     icon: '/favicon.ico',
   },
-  metadataBase: new URL('https://instituto-next.vercel.app'),
+  metadataBase: new URL('https://instituto-serfeliz-industrial.online'),
 };
 
 export default function RootLayout({
@@ -82,7 +82,7 @@ export default function RootLayout({
               "latitude": -19.931,
               "longitude": -44.053
             },
-            "url": "https://instituto-next.vercel.app/",
+            "url": "https://instituto-serfeliz-industrial.online/",
             "telephone": "+55 31 99585-2001",
             "openingHours": [
               "Mo-Fr 07:00-18:00"

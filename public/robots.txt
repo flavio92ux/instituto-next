@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://instituto-next.vercel.app/sitemap.xml
+Sitemap: https://instituto-serfeliz-industrial.online/sitemap.xml

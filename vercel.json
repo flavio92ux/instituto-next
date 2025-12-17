@@ -1,7 +1,7 @@
 {
   "headers": [
     {
-      "source": "/public/(?!ads\\.txt|robots\\.txt)/(.*)",
+      "source": "/public/(.*)",
       "headers": [
         {
           "key": "Cache-Control",

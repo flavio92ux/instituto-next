@@ -6,7 +6,7 @@ const nextConfig = {
   },
   images: {
     loader: 'custom',
-    loaderFile: './cloudflare-loader.js',
+    loaderFile: './cloudflare-loader.ts',
   }
 }
 

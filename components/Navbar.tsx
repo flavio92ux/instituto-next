@@ -29,16 +29,16 @@ export default function Navbar() {
 
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center space-x-8">
-            <a href="#inicio" className={`transition-colors duration-300 ${isScrolled ? 'text-gray-600 hover:text-blue-400' : 'text-white/90 hover:text-white'}`}>
+            <a href="#inicio" aria-label="Navegar para o início" className={`transition-colors duration-300 ${isScrolled ? 'text-gray-600 hover:text-blue-400' : 'text-white/90 hover:text-white'}`}>
               Início
             </a>
-            <a href="#servicos" className={`transition-colors duration-300 ${isScrolled ? 'text-gray-600 hover:text-blue-400' : 'text-white/90 hover:text-white'}`}>
+            <a href="#servicos" aria-label="Navegar para serviços" className={`transition-colors duration-300 ${isScrolled ? 'text-gray-600 hover:text-blue-400' : 'text-white/90 hover:text-white'}`}>
               Serviços
             </a>
-            <a href="#sobre" className={`transition-colors duration-300 ${isScrolled ? 'text-gray-600 hover:text-blue-400' : 'text-white/90 hover:text-white'}`}>
+            <a href="#sobre" aria-label="Navegar para sobre nós" className={`transition-colors duration-300 ${isScrolled ? 'text-gray-600 hover:text-blue-400' : 'text-white/90 hover:text-white'}`}>
               Sobre
             </a>
-            <a href="#contato" className={`transition-colors duration-300 ${isScrolled ? 'text-gray-600 hover:text-blue-400' : 'text-white/90 hover:text-white'}`}>
+            <a href="#contato" aria-label="Navegar para contato" className={`transition-colors duration-300 ${isScrolled ? 'text-gray-600 hover:text-blue-400' : 'text-white/90 hover:text-white'}`}>
               Contato
             </a>
             <Button className="bg-red-600 hover:bg-red-700">Matricule-se</Button>
@@ -46,7 +46,11 @@ export default function Navbar() {
 
           {/* Mobile Menu Button */}
           <div className="md:hidden">
-            <button onClick={() => setIsMenuOpen(!isMenuOpen)} className={isScrolled ? 'text-gray-600' : 'text-white'}>
+            <button
+              onClick={() => setIsMenuOpen(!isMenuOpen)}
+              aria-label="Mobile Menu Button"
+              className={isScrolled ? 'text-gray-600' : 'text-white'}
+            >
               {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
             </button>
           </div>
@@ -56,11 +60,14 @@ export default function Navbar() {
         {isMenuOpen && (
           <div className="md:hidden bg-white">
             <div className="px-2 pt-2 pb-3 space-y-1">
-              <a href="#inicio" className="block px-3 py-2 text-gray-600 hover:text-blue-400">Início</a>
-              <a href="#servicos" className="block px-3 py-2 text-gray-600 hover:text-blue-400">Serviços</a>
-              <a href="#sobre" className="block px-3 py-2 text-gray-600 hover:text-blue-400">Sobre</a>
-              <a href="#contato" className="block px-3 py-2 text-gray-600 hover:text-blue-400">Contato</a>
-              <Button className="w-full bg-red-600 hover:bg-red-700 mt-4">Matricule-se</Button>
+              <a href="#inicio" aria-label="Navegar para o início" className="block px-3 py-2 text-gray-600 hover:text-blue-400">Início</a>
+              <a href="#servicos" aria-label="Navegar para serviços" className="block px-3 py-2 text-gray-600 hover:text-blue-400">Serviços</a>
+              <a href="#sobre" aria-label="Navegar para sobre nós" className="block px-3 py-2 text-gray-600 hover:text-blue-400">Sobre</a>
+              <a href="#contato" aria-label="Navegar para contato" className="block px-3 py-2 text-gray-600 hover:text-blue-400">Contato</a>
+              <Button
+                aria-label="Botão de matricular"
+                className="w-full bg-red-600 hover:bg-red-700 mt-4"
+              >Matricule-se</Button>
             </div>
           </div>
         )}

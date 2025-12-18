@@ -9,7 +9,10 @@ const Logo = () => {
         <Image
           loader={cloudflareLoader}
           src="/instituto.jpeg" 
-          alt="Logo" 
+          alt="Logo"
+          width={48}
+          height={48}
+          sizes="48px"
           className="relative z-12 h-12 w-12"
         />
       </div>

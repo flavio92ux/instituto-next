@@ -8,6 +8,7 @@ const Logo = () => {
         <div className="absolute inset-0 bg-gradient-to-br"></div>
         <Image
           loader={cloudflareLoader}
+          priority
           src="/instituto.jpeg" 
           alt="Logo"
           width={48}

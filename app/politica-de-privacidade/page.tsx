@@ -11,6 +11,7 @@ const PrivacyPolicy = () => {
           <div className="flex items-center mb-8">
             <button 
               onClick={() => window.history.back()}
+              aria-label="Botão de voltar"
               className="flex items-center text-blue-500 hover:text-blue-600 transition-colors mr-4"
             >
               <ArrowLeft size={20} className="mr-2" />

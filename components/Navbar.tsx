@@ -46,7 +46,11 @@ export default function Navbar() {
 
           {/* Mobile Menu Button */}
           <div className="md:hidden">
-            <button onClick={() => setIsMenuOpen(!isMenuOpen)} className={isScrolled ? 'text-gray-600' : 'text-white'}>
+            <button
+              onClick={() => setIsMenuOpen(!isMenuOpen)}
+              aria-label="Mobile Menu Button"
+              className={isScrolled ? 'text-gray-600' : 'text-white'}
+            >
               {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
             </button>
           </div>
@@ -60,7 +64,10 @@ export default function Navbar() {
               <a href="#servicos" className="block px-3 py-2 text-gray-600 hover:text-blue-400">Serviços</a>
               <a href="#sobre" className="block px-3 py-2 text-gray-600 hover:text-blue-400">Sobre</a>
               <a href="#contato" className="block px-3 py-2 text-gray-600 hover:text-blue-400">Contato</a>
-              <Button className="w-full bg-red-600 hover:bg-red-700 mt-4">Matricule-se</Button>
+              <Button
+                aria-label="Botão de matricular"
+                className="w-full bg-red-600 hover:bg-red-700 mt-4"
+              >Matricule-se</Button>
             </div>
           </div>
         )}

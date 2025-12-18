@@ -101,6 +101,7 @@ const SendMail = () => {
 
                 <button
                     type="submit"
+                    aria-label="Submeter mensagem"
                     className="w-full px-6 py-3 bg-red-500 text-white font-medium rounded-lg shadow-md hover:bg-red-600 transition-colors duration-300 flex items-center justify-center"
                 >
                     Enviar Mensagem

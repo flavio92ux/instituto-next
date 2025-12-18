@@ -57,6 +57,7 @@ const Header = () => {
           {/* Botão do Menu Mobile */}
           <button
             className="md:hidden p-2 text-blue-500 hover:text-blue-700 focus:outline-none"
+            aria-label="Botão menu mobile"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
             {isMenuOpen ? <X size={24} /> : <Menu size={24} />}

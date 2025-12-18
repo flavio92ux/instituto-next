@@ -106,6 +106,7 @@ const GallerySection = () => {
         {selectedImage !== null && (
           <div className="fixed inset-0 z-50 bg-black/90 flex items-center justify-center p-4">
             <button 
+              aria-label="Botão"
               className="absolute top-4 right-4 text-white hover:text-gray-300 transition-colors"
               onClick={closeModal}
             >

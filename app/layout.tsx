@@ -3,7 +3,11 @@ import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import Script from 'next/script';
 
-const inter = Inter({ subsets: ['latin'] });
+const inter = Inter({ 
+  subsets: ['latin'],
+  display: 'swap',
+  preload: true,
+});
 
 export const metadata: Metadata = {
   title: 'Instituto Ser Feliz | Creche e Escola Infantil no Bairro Industrial - Contagem MG',
@@ -52,6 +56,17 @@ export default function RootLayout({
   return (
     <html lang="pt-BR">
       <head>
+        {/* Preload para Google Fonts - reduz chaining requests (FCP) */}
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        
+        {/* Preload para Google Analytics */}
+        <link rel="preconnect" href="https://www.googletagmanager.com" />
+        <link rel="preconnect" href="https://www.google-analytics.com" />
+        
+        {/* Preload para Google AdSense */}
+        <link rel="preconnect" href="https://pagead2.googlesyndication.com" />
+
         {/* Meta tag de verificação do Google */}
         <meta
           name="google-site-verification"
@@ -63,6 +78,7 @@ export default function RootLayout({
           content="ca-pub-4946920103183663"
         />
 
+        {/* Preload e stylesheet para CSS global */}
         <link rel="preload" as="style" href="/globals.css" />
         <link rel="stylesheet" href="/globals.css" />
 
@@ -103,7 +119,7 @@ export default function RootLayout({
         async
         src="https://www.googletagmanager.com/gtag/js?id=G-2EKLCJJ6FC"
       ></Script>
-      <Script id="google-analytics">
+      <Script id="google-analytics" strategy="afterInteractive">
         {`
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
@@ -113,7 +129,7 @@ export default function RootLayout({
       </Script>
 
       <Script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4946920103183663"
-        crossOrigin="anonymous"></Script>
+        crossOrigin="anonymous" strategy="afterInteractive"></Script>
       <body className={inter.className}>{children}</body>
     </html>
   );

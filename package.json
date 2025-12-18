@@ -72,5 +72,11 @@
   },
   "devDependencies": {
     "@types/swiper": "^5.4.3"
-  }
+  },
+  "browserslist": [
+    "last 2 versions",
+    "> 1%",
+    "not dead",
+    "not IE 11"
+  ]
 }

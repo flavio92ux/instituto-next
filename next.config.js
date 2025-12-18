@@ -4,6 +4,10 @@ const nextConfig = {
   eslint: {
     ignoreDuringBuilds: true,
   },
-};
+  images: {
+    loader: 'custom',
+    loaderFile: './cloudflare-loader.js',
+  }
+}
 
 module.exports = nextConfig;

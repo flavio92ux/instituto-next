@@ -1,9 +1,13 @@
+import Image from 'next/image';
+import cloudflareLoader from '@/cloudflare-loader';
+
 const Logo = () => {
   return (
     <div className="flex items-center">
       <div className="relative h-14 w-14 rounded-full flex items-center justify-center overflow-hidden shadow-lg">
         <div className="absolute inset-0 bg-gradient-to-br"></div>
-        <img 
+        <Image
+          loader={cloudflareLoader}
           src="/instituto.jpeg" 
           alt="Logo" 
           className="relative z-12 h-12 w-12"

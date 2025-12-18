@@ -1,6 +1,8 @@
 "use client";
 
 import React, { useState } from 'react';
+import Image from 'next/image';
+import cloudflareLoader from '@/cloudflare-loader';
 import { X } from 'lucide-react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
@@ -61,7 +63,8 @@ const GallerySection = () => {
               onClick={() => openModal(index)}
             >
               <div className="aspect-w-4 aspect-h-3">
-                <img 
+                <Image
+                  loader={cloudflareLoader}
                   src={image.src} 
                   alt={image.alt} 
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
@@ -84,7 +87,8 @@ const GallerySection = () => {
                   onClick={() => openModal(index)}
                 >
                   <div className="aspect-w-4 aspect-h-3">
-                    <img 
+                    <Image
+                      loader={cloudflareLoader}
                       src={image.src} 
                       alt={image.alt} 
                       className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
@@ -107,7 +111,8 @@ const GallerySection = () => {
             >
               <X size={32} />
             </button>
-            <img 
+            <Image
+              loader={cloudflareLoader}
               src={images[selectedImage].src} 
               alt={images[selectedImage].alt} 
               className="max-w-full max-h-[85vh] object-contain"

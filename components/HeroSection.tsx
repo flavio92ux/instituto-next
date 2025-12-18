@@ -1,5 +1,8 @@
 "use client";
 
+import Image from 'next/image';
+import cloudflareLoader from '@/cloudflare-loader';
+
 const HeroSection = () => {
   return (
     <section id="home" className="relative pt-20 pb-16 md:pt-32 md:pb-24 overflow-hidden mb-8">
@@ -23,7 +26,8 @@ const HeroSection = () => {
             {/* Container da imagem principal */}
             <div className="relative z-10 overflow-hidden rounded-3xl shadow-2xl">
               <div className="relative">
-                <img 
+                <Image
+                  loader={cloudflareLoader}
                   src="/instituto-capa.jpeg" 
                   alt="Instituto Ser Feliz - Educação Infantil" 
                   className="w-full h-[400px] md:h-[500px] lg:h-[600px] object-cover transform transition-transform duration-700 group-hover:scale-105"

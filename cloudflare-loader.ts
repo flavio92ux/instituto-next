@@ -3,5 +3,5 @@ export default function cloudflareLoader({ src, width, quality }: { src: string,
   
   // Se a imagem for externa (ex: S3), você precisa garantir que o 
   // Cloudflare Images tenha permissão para puxar de "Remote Sources"
-  return `https://instituto-serfeliz-industrial.online/cdn-cgi/image/${params.join(',')}${src}`
+  return `https://instituto-serfeliz-industrial.online/cdn-cgi/image/${params.join(',')}/${src}`
 }

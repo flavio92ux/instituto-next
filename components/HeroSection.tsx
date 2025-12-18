@@ -26,14 +26,14 @@ const HeroSection = () => {
             {/* Container da imagem principal */}
             <div className="relative z-10 overflow-hidden rounded-3xl shadow-2xl">
               <div className="relative">
-                <Image
+                {/* <Image
                   loader={(props) => cloudflareLoader({ ...props, quality: 65 })}
                   priority
                   src="/instituto-capa.jpeg"
                   sizes="(max-width: 1536px) 100vw, 1536px"
                   alt="Instituto Ser Feliz - Educação Infantil" 
                   className="w-full h-[400px] md:h-[500px] lg:h-[600px] object-cover transform transition-transform duration-700 group-hover:scale-105"
-                />
+                /> */}
                 
                 {/* Overlay sutil para melhor integração */}
                 <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent"></div>

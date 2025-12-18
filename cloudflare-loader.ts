@@ -10,5 +10,5 @@ export default function cloudflareLoader({ src, width, quality }: { src: string,
 
   // Se a imagem já for uma URL absoluta, pegamos apenas o path ou tratamos a origem
   // Para fins de teste, assumimos que a imagem está no seu próprio domínio
-  return `https://instituto-serfeliz-industrial.online/image/${params.join(',')}/${src}`;
+  return `https://instituto-serfeliz-industrial.online/image/${params.join(',')}${src}`;
 }

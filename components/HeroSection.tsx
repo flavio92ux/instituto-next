@@ -27,8 +27,11 @@ const HeroSection = () => {
             <div className="relative z-10 overflow-hidden rounded-3xl shadow-2xl">
               <div className="relative">
                 <Image
-                  loader={cloudflareLoader}
-                  src="/instituto-capa.jpeg" 
+                  loader={(props) => cloudflareLoader({ ...props, quality: 65 })}
+                  fill
+                  priority
+                  src="/instituto-capa.jpeg"
+                  sizes="(max-width: 1536px) 100vw, 1536px"
                   alt="Instituto Ser Feliz - Educação Infantil" 
                   className="w-full h-[400px] md:h-[500px] lg:h-[600px] object-cover transform transition-transform duration-700 group-hover:scale-105"
                 />

@@ -19,13 +19,13 @@ const Footer = () => {
               Oferecendo educação de qualidade e cuidados para crianças de 1 a 3 anos. Nossa missão é criar um ambiente acolhedor onde as crianças possam aprender, crescer e prosperar.
             </p>
             <div className="flex space-x-4">
-              <a href="https://www.facebook.com/profile.php?id=301587243324992&_rdr" className="text-gray-400 hover:text-white transition-colors">
+              <a href="https://www.facebook.com/profile.php?id=301587243324992&_rdr" aria-label="Visite nossa página no Facebook" className="text-gray-400 hover:text-white transition-colors">
                 <Facebook size={20} />
               </a>
-              <a href="https://www.instagram.com/instituto_serfeliz" className="text-gray-400 hover:text-white transition-colors">
+              <a href="https://www.instagram.com/instituto_serfeliz" aria-label="Visite nosso perfil no Instagram" className="text-gray-400 hover:text-white transition-colors">
                 <Instagram size={20} />
               </a>
-              <a href="https://wa.me/5531995852001" className="text-gray-400 hover:text-white transition-colors">
+              <a href="https://wa.me/5531995852001" aria-label="Envie uma mensagem via WhatsApp" className="text-gray-400 hover:text-white transition-colors">
                 <FaWhatsapp size={20} />
               </a>
             </div>
@@ -35,9 +35,9 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold mb-4 text-blue-400">Links Rápidos</h3>
             <ul className="space-y-2">
-              <li><a href="#programs" className="text-gray-400 hover:text-white transition-colors">Nossos Programas</a></li>
-              <li><a href="#faq" className="text-gray-400 hover:text-white transition-colors">FAQ</a></li>
-              <li><a href="#contact" className="text-gray-400 hover:text-white transition-colors">Fale Conosco</a></li>
+              <li><a href="#programs" aria-label="Navegar para nossos programas" className="text-gray-400 hover:text-white transition-colors">Nossos Programas</a></li>
+              <li><a href="#faq" aria-label="Navegar para perguntas frequentes" className="text-gray-400 hover:text-white transition-colors">FAQ</a></li>
+              <li><a href="#contact" aria-label="Navegar para fale conosco" className="text-gray-400 hover:text-white transition-colors">Fale Conosco</a></li>
             </ul>
           </div>
 
@@ -82,12 +82,12 @@ const Footer = () => {
         <div className="border-t border-gray-800 mt-12 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-500 text-sm mb-4 md:mb-0">
-              &copy; {new Date().getFullYear()} <a href="https://flavio92ux.github.io" target="_blank" rel="noopener noreferrer" className="underline hover:text-white">flavio92ux</a>. Todos os direitos reservados.
+              &copy; {new Date().getFullYear()} <a href="https://flavio92ux.github.io" target="_blank" rel="noopener noreferrer" aria-label="Visite o portfolio de flavio92ux" className="underline hover:text-white">flavio92ux</a>. Todos os direitos reservados.
             </p>
             <div className="flex space-x-4">
-              <a href="/politica-de-privacidade" className="text-gray-500 hover:text-white text-sm transition-colors">Política de Privacidade</a>
-              <a href="/termos-de-servico" className="text-gray-500 hover:text-white text-sm transition-colors">Termos de Serviço</a>
-              <a href="/politica-de-cookies" className="text-gray-500 hover:text-white text-sm transition-colors">Política de Cookies</a>
+              <a href="/politica-de-privacidade" aria-label="Navegar para Política de Privacidade" className="text-gray-500 hover:text-white text-sm transition-colors">Política de Privacidade</a>
+              <a href="/termos-de-servico" aria-label="Navegar para Termos de Serviço" className="text-gray-500 hover:text-white text-sm transition-colors">Termos de Serviço</a>
+              <a href="/politica-de-cookies" aria-label="Navegar para Política de Cookies" className="text-gray-500 hover:text-white text-sm transition-colors">Política de Cookies</a>
             </div>
           </div>
         </div>

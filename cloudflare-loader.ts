@@ -2,7 +2,8 @@ export default function cloudflareLoader({ src, width, quality }: { src: string,
   const params = [
     `width=${width}`,
     `quality=${quality || 75}`,
-    'format=auto'
+    'format=auto',
+    'metadata=none'
   ]
   
   // Se a imagem for externa (ex: S3), você precisa garantir que o 

@@ -78,10 +78,6 @@ export default function RootLayout({
           content="ca-pub-4946920103183663"
         />
 
-        {/* Preload e stylesheet para CSS global */}
-        <link rel="preload" as="style" href="/globals.css" />
-        <link rel="stylesheet" href="/globals.css" />
-
         {/* Dado Estruturado - Preschool */}
         <Script id="structured-data" type="application/ld+json">
           {JSON.stringify({

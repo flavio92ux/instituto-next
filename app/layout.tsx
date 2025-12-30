@@ -102,7 +102,7 @@ export default function RootLayout({
       </head>
 
       {/* Google Tag Manager */}
-      <Script
+      {/* <Script
         async
         src="https://www.googletagmanager.com/gtag/js?id=G-2EKLCJJ6FC"
       ></Script>
@@ -116,7 +116,7 @@ export default function RootLayout({
       </Script>
 
       <Script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4946920103183663"
-        crossOrigin="anonymous" strategy="afterInteractive"></Script>
+        crossOrigin="anonymous" strategy="afterInteractive"></Script> */}
       <body className={inter.className}>{children}</body>
     </html>
   );

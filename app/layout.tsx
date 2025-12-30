@@ -56,6 +56,8 @@ export default function RootLayout({
   return (
     <html lang="pt-BR">
       <head>
+        <link rel="preconnect" href="https://instituto-serfeliz-industrial.online/_next/static/css/c11fa715fdda2186.css" />
+
         {/* Meta tag de verificação do Google */}
         <meta
           name="google-site-verification"

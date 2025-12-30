@@ -1,4 +1,1 @@
-User-agent: *
-Allow: /
-
 Sitemap: https://instituto-serfeliz-industrial.online/sitemap.xml

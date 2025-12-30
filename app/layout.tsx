@@ -105,9 +105,8 @@ export default function RootLayout({
       <Script
         async
         src="https://www.googletagmanager.com/gtag/js?id=G-2EKLCJJ6FC"
-        strategy="lazyOnload"
       ></Script>
-      <Script id="google-analytics" strategy="lazyOnload">
+      <Script id="google-analytics" strategy="afterInteractive">
         {`
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
@@ -117,7 +116,7 @@ export default function RootLayout({
       </Script>
 
       {/* <Script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4946920103183663"
-        crossOrigin="anonymous" strategy="lazyOnload"></Script> */}
+        crossOrigin="anonymous" strategy="afterInteractive"></Script> */}
       <body className={inter.className}>{children}</body>
     </html>
   );

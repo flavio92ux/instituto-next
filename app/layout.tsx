@@ -56,6 +56,8 @@ export default function RootLayout({
   return (
     <html lang="pt-BR">
       <head>
+        <link rel="preconnect" href="https://instituto-serfeliz-industrial.online/_next/static/css/c11fa715fdda2186.css" />
+
         {/* Preload para Google Fonts - reduz chaining requests (FCP) */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />

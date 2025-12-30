@@ -56,8 +56,6 @@ export default function RootLayout({
   return (
     <html lang="pt-BR">
       <head>
-        <link rel="preconnect" href="https://instituto-serfeliz-industrial.online/_next/static/css/c11fa715fdda2186.css" />
-
         {/* Meta tag de verificação do Google */}
         <meta
           name="google-site-verification"
@@ -105,6 +103,7 @@ export default function RootLayout({
       <Script
         async
         src="https://www.googletagmanager.com/gtag/js?id=G-2EKLCJJ6FC"
+        strategy="afterInteractive"
       ></Script>
       <Script id="google-analytics" strategy="afterInteractive">
         {`

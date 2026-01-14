@@ -56,6 +56,8 @@ export default function RootLayout({
   return (
     <html lang="pt-BR">
       <head>
+        {/* Favicon explícito para Google */}
+        <link rel="icon" href="/favicon.ico" />
         {/* Meta tag de verificação do Google */}
         <meta
           name="google-site-verification"

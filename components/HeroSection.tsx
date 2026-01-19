@@ -30,6 +30,8 @@ const HeroSection = () => {
                   loader={(props) => cloudflareLoader({ ...props, quality: 65 })}
                   priority
                   src="/instituto-capa.jpeg"
+                  width={1536}
+                  height={600}
                   sizes="(max-width: 1536px) 100vw, 1536px"
                   alt="Instituto Ser Feliz - Educação Infantil" 
                   className="w-full h-[400px] md:h-[500px] lg:h-[600px] object-cover transform transition-transform duration-700 group-hover:scale-105"

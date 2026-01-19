@@ -66,7 +66,8 @@ const GallerySection = () => {
                 <Image
                   loader={cloudflareLoader}
                   src={image.src} 
-                  alt={image.alt} 
+                  alt={image.alt}
+                  width={100}
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                 />
               </div>
@@ -89,6 +90,7 @@ const GallerySection = () => {
                   <div className="aspect-w-4 aspect-h-3">
                     <Image
                       loader={cloudflareLoader}
+                      width={100}
                       src={image.src} 
                       alt={image.alt} 
                       className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
@@ -114,6 +116,7 @@ const GallerySection = () => {
             </button>
             <Image
               loader={cloudflareLoader}
+              width={100}
               src={images[selectedImage].src} 
               alt={images[selectedImage].alt} 
               className="max-w-full max-h-[85vh] object-contain"

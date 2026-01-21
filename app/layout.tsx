@@ -56,12 +56,17 @@ export default function RootLayout({
   return (
     <html lang="pt-BR">
       <head>
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.ico" />
-        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.ico" />
-        <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48x48.ico" />
-        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.ico" />
-        <link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.ico" />
-        <link rel="icon" type="image/png" sizes="512x512" href="/android-chrome-512x512.ico" />
+        {/* Favicon principal (Google SERP) */}
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+
+        {/* Favicon vetorial (browsers modernos) */}
+        <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+
+        {/* Apple Touch Icon (iOS / Safari) */}
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+
+        {/* Manifest (PWA / Android) */}
+        <link rel="manifest" href="/site.webmanifest" />
 
         {/* Meta tag de verificação do Google */}
         <meta

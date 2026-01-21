@@ -65,8 +65,14 @@ export default function RootLayout({
         {/* Apple Touch Icon (iOS / Safari) */}
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
 
+        {/* desktop PNG favicon */}
+        <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png"></link>
+
         {/* Manifest (PWA / Android) */}
         <link rel="manifest" href="/site.webmanifest" />
+
+        {/* touch web app title declared */}
+        <meta name="apple-mobile-web-app-title" content="Instituto Ser Feliz"></meta>
 
         {/* Meta tag de verificação do Google */}
         <meta

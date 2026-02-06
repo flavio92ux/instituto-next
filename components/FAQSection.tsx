@@ -56,7 +56,7 @@ const FAQSection = () => {
         </div>
 
         <div className="max-w-4xl mx-auto">
-          <div className="space-y-8">
+          <div id='faq-section' className="space-y-8">
             {faqs.map((faq, index) => (
               <div 
                 key={index}

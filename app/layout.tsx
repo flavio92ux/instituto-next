@@ -56,6 +56,16 @@ export default function RootLayout({
   return (
     <html lang="pt-BR">
       <head>
+        {/* Google Tag Manager - Head */}
+        <Script id="gtm-head" strategy="beforeInteractive">
+          {`
+            (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-N4K46WLH');
+          `}
+        </Script>
         {/* Favicon principal (Google SERP) */}
         <link rel="icon" href="/favicon.ico" sizes="any" />
 
@@ -73,17 +83,6 @@ export default function RootLayout({
 
         {/* touch web app title declared */}
         <meta name="apple-mobile-web-app-title" content="Instituto Ser Feliz"></meta>
-
-        {/* Meta tag de verificação do Google */}
-        <meta
-          name="google-site-verification"
-          content="HM8EQ7aetV45DAINpGsAl9P4qjmv-Moue1rwS8a0BCM"
-        />
-
-        <meta
-          name="google-adsense-account"
-          content="ca-pub-4946920103183663"
-        />
 
         {/* Dado Estruturado - Preschool */}
         <Script id="structured-data" type="application/ld+json">
@@ -117,24 +116,18 @@ export default function RootLayout({
         </Script>
       </head>
 
-      {/* Google Tag Manager */}
-      <Script
-        async
-        src="https://www.googletagmanager.com/gtag/js?id=G-2EKLCJJ6FC"
-        strategy="afterInteractive"
-      ></Script>
-      <Script id="google-analytics" strategy="afterInteractive">
-        {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-2EKLCJJ6FC');
-          `}
-      </Script>
-
-      {/* <Script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4946920103183663"
-        crossOrigin="anonymous" strategy="afterInteractive"></Script> */}
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        {/* Google Tag Manager (noscript) */}
+        <noscript>
+          <iframe
+            src="https://www.googletagmanager.com/ns.html?id=GTM-N4K46WLH"
+            height="0"
+            width="0"
+            style={{ display: 'none', visibility: 'hidden' }}
+          ></iframe>
+        </noscript>
+        {children}
+      </body>
     </html>
   );
 }

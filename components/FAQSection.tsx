@@ -59,7 +59,8 @@ const FAQSection = () => {
           <div className="space-y-8">
             {faqs.map((faq, index) => (
               <div 
-                key={index} 
+                key={index}
+                id={`faq-section-${index}`}
                 className="bg-gray-50 rounded-lg border border-gray-200 p-6 hover:shadow-md transition-shadow duration-300"
               >
                 <h3 className="text-xl font-semibold text-gray-900 mb-3">

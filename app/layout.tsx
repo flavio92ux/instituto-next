@@ -84,17 +84,6 @@ export default function RootLayout({
         {/* touch web app title declared */}
         <meta name="apple-mobile-web-app-title" content="Instituto Ser Feliz"></meta>
 
-        {/* Meta tag de verificação do Google */}
-        <meta
-          name="google-site-verification"
-          content="HM8EQ7aetV45DAINpGsAl9P4qjmv-Moue1rwS8a0BCM"
-        />
-
-        <meta
-          name="google-adsense-account"
-          content="ca-pub-4946920103183663"
-        />
-
         {/* Dado Estruturado - Preschool */}
         <Script id="structured-data" type="application/ld+json">
           {JSON.stringify({
@@ -127,23 +116,6 @@ export default function RootLayout({
         </Script>
       </head>
 
-      {/* Google Tag Manager */}
-      <Script
-        async
-        src="https://www.googletagmanager.com/gtag/js?id=G-2EKLCJJ6FC"
-        strategy="afterInteractive"
-      ></Script>
-      <Script id="google-analytics" strategy="afterInteractive">
-        {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-2EKLCJJ6FC');
-          `}
-      </Script>
-
-      {/* <Script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4946920103183663"
-        crossOrigin="anonymous" strategy="afterInteractive"></Script> */}
       <body className={inter.className}>
         {/* Google Tag Manager (noscript) */}
         <noscript>
